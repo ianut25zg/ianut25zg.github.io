@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>art met大图_高清艺术大图资源_艺术大图下载与鉴赏</title>
+<meta name="description" content="art met大图为艺术爱好者提供高清艺术大图资源，涵盖世界名画、雕塑、建筑与当代装置作品的高清图像、作品档案、鉴赏要点与社区评论，适合艺术爱好者与视觉创作者浏览收藏。">
+<meta name="keywords" content="高清艺术大图,世界名画资源,博物馆藏品图像,艺术图像鉴赏,视觉素材库">
+<style>
+:root{
+  --ink:#14161c;
+  --ink-2:#3a3f4b;
+  --ink-3:#6b7280;
+  --line:#e3e5ea;
+  --line-2:#eef0f4;
+  --bg:#f7f6f3;
+  --panel:#ffffff;
+  --paper:#fbfaf7;
+  --brand:#8a1c2b;
+  --brand-2:#b8323f;
+  --brand-soft:#f5e8ea;
+  --gold:#b08b3e;
+  --gold-soft:#f6efdf;
+  --teal:#1d5c58;
+  --teal-soft:#e6f0ef;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow:0 1px 2px rgba(20,22,28,.05),0 8px 24px rgba(20,22,28,.05);
+  --shadow-sm:0 1px 2px rgba(20,22,28,.06);
+  --max:1320px;
+  --sticky-h:96px;
+  --font:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+:target{scroll-margin-top:calc(var(--sticky-h) + 16px)}
+section[id],div[id]{scroll-margin-top:calc(var(--sticky-h) + 16px)}
+
+/* ---------- 吸顶公告条 + 页头 ---------- */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:linear-gradient(90deg,#14161c,#22262f 60%,#2b1a1d);
+  color:#f0e9de;font-size:13px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.notice-in{
+  max-width:var(--max);margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.notice-badge{
+  background:var(--brand);color:#fff;font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:3px;letter-spacing:.06em;white-space:nowrap;
+}
+.notice-txt{flex:1;min-width:200px;color:#d8d2c8}
+.notice-txt b{color:#fff;font-weight:600}
+.notice-link{color:#e8c9a0;white-space:nowrap;border-bottom:1px solid rgba(232,201,160,.4)}
+.notice-link:hover{color:#fff}
+
+header.site{
+  background:rgba(251,250,247,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm);
+}
+.head-in{
+  max-width:var(--max);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:24px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-mark{width:38px;height:38px;flex-shrink:0}
+.brand-txt{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.01em}
+.brand-sub{font-size:11px;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase}
+nav.main{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+nav.main a{
+  font-size:14px;padding:6px 11px;border-radius:6px;color:var(--ink-2);
+  transition:background .15s,color .15s;
+}
+nav.main a:hover,nav.main a:focus-visible{background:var(--brand-soft);color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:10px}
+.search-box{
+  display:flex;align-items:center;gap:6px;
+  border:1px solid var(--line);background:#fff;border-radius:8px;
+  padding:5px 10px;min-width:190px;
+}
+.search-box svg{flex-shrink:0;color:var(--ink-3)}
+.search-box input{
+  border:0;outline:0;font:inherit;font-size:13px;width:100%;background:transparent;color:var(--ink);
+}
+.search-box input::placeholder{color:#9aa0ab}
+.btn-ghost{
+  font-size:13px;padding:6px 13px;border-radius:7px;border:1px solid var(--line);
+  background:#fff;color:var(--ink-2);cursor:pointer;font-family:inherit;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 12% 0%,rgba(138,28,43,.09),transparent 70%),
+    radial-gradient(700px 380px at 88% 100%,rgba(176,139,62,.13),transparent 70%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  max-width:var(--max);margin:0 auto;padding:44px 20px 40px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:44px;align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.16em;color:var(--brand);
+  background:var(--brand-soft);border-radius:20px;padding:4px 14px;margin-bottom:16px;
+  text-transform:uppercase;font-weight:600;
+}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(30px,4vw,46px);
+  letter-spacing:.01em;line-height:1.18;margin-bottom:16px;color:var(--ink);
+}
+.hero h1 em{
+  font-style:normal;color:var(--brand);
+  background:linear-gradient(transparent 62%,rgba(176,139,62,.32) 62%);
+}
+.hero-desc{font-size:15.5px;color:var(--ink-2);max-width:530px;margin-bottom:22px;line-height:1.85}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--brand);color:#fff;font-size:14.5px;font-weight:600;
+  padding:11px 24px;border-radius:8px;box-shadow:0 4px 14px rgba(138,28,43,.24);
+  transition:transform .15s,box-shadow .15s;
+}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(138,28,43,.3)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  font-size:14.5px;padding:11px 22px;border-radius:8px;
+}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap}
+.hero-stat b{font-family:var(--serif);font-size:22px;color:var(--brand);display:block;line-height:1.2}
+.hero-stat span{font-size:12.5px;color:var(--ink-3)}
+
+/* 首屏视觉 —— 原创 SVG 画廊墙 */
+.hero-visual{position:relative}
+.gallery-wall{
+  display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(6,1fr);
+  gap:9px;aspect-ratio:1/.92;padding:16px;
+  background:linear-gradient(155deg,#fff,#f2efe8);
+  border:1px solid var(--line);border-radius:var(--radius-lg);
+  box-shadow:0 18px 44px rgba(20,22,28,.09);
+}
+.frame{
+  border-radius:4px;position:relative;overflow:hidden;
+  box-shadow:0 2px 8px rgba(20,22,28,.12),inset 0 0 0 3px #fff;
+}
+.frame svg{width:100%;height:100%;display:block}
+.f1{grid-column:1/4;grid-row:1/4}
+.f2{grid-column:4/7;grid-row:1/3}
+.f3{grid-column:4/7;grid-row:3/6}
+.f4{grid-column:1/3;grid-row:4/7}
+.f5{grid-column:3/5;grid-row:4/6}
+.f6{grid-column:5/7;grid-row:6/7}
+.f7{grid-column:3/5;grid-row:6/7}
+.f8{grid-column:1/3;grid-row:3/4}
+.hero-tag{
+  position:absolute;right:-6px;bottom:-14px;
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:10px 16px;box-shadow:var(--shadow);font-size:12.5px;color:var(--ink-2);
+  display:flex;align-items:center;gap:9px;
+}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--teal);display:block}
+
+/* ---------- 布局：三栏门户 ---------- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.layout{
+  display:grid;grid-template-columns:182px minmax(0,1fr) 264px;
+  gap:28px;align-items:start;padding:32px 0 20px;
+}
+aside.side{position:sticky;top:calc(var(--sticky-h) + 16px)}
+.side-panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 14px 10px;margin-bottom:18px;
+}
+.side-title{
+  font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--ink-3);
+  text-transform:uppercase;margin-bottom:10px;
+}
+.channel-list{list-style:none;margin:0;padding:0}
+.channel-list li{margin:0}
+.channel-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:7px 9px;border-radius:6px;font-size:13.5px;color:var(--ink-2);
+  transition:background .14s,color .14s;
+}
+.channel-list a:hover,.channel-list a:focus-visible{background:var(--brand-soft);color:var(--brand)}
+.channel-list a span{font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.channel-list a:hover span{color:var(--brand-2)}
+
+/* 右侧热榜 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rk}
+.rank-list li{
+  display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line-2);
+  font-size:13.5px;counter-increment:rk;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);flex-shrink:0;width:19px;height:19px;border-radius:4px;
+  background:var(--line-2);color:var(--ink-3);font-size:11.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:4px;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.rank-list a{color:var(--ink-2);line-height:1.5}
+.rank-list a:hover{color:var(--brand)}
+.rank-meta{display:block;font-size:11.5px;color:var(--ink-3);margin-top:1px}
+
+/* ---------- 主内容通用 ---------- */
+main{min-width:0}
+.block{margin-bottom:40px}
+.block-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+  margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--ink);
+}
+.block-head h2{
+  font-family:var(--serif);font-size:21px;letter-spacing:.01em;
+  display:flex;align-items:center;gap:10px;
+}
+.block-head h2::before{
+  content:"";width:5px;height:19px;background:var(--brand);border-radius:2px;display:block;
+}
+.block-head .more{font-size:12.5px;color:var(--ink-3);white-space:nowrap}
+.block-head .more:hover{color:var(--brand)}
+.lead{font-size:14.5px;color:var(--ink-2);margin-bottom:16px}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.overview p{color:var(--ink-2);font-size:14.6px;line-height:1.92}
+.overview p:last-child{margin-bottom:0}
+.overview strong{color:var(--ink);font-weight:600}
+.overview .hl{color:var(--brand);font-weight:600}
+
+/* 精选卡片 */
+.card-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;
+}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .16s,box-shadow .16s,border-color .16s;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#d6d9e0}
+.card-media{position:relative;aspect-ratio:4/3;background:#eceae5;overflow:hidden}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.card:hover .card-media img{transform:scale(1.04)}
+.card-type{
+  position:absolute;left:9px;top:9px;background:rgba(20,22,28,.78);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:3px;letter-spacing:.03em;backdrop-filter:blur(4px);
+}
+.card-score{
+  position:absolute;right:9px;bottom:9px;background:#fff;color:var(--brand);
+  font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;
+  box-shadow:0 2px 6px rgba(0,0,0,.14);font-variant-numeric:tabular-nums;
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:15.5px;margin-bottom:7px;line-height:1.45}
+.card-body h3 a:hover{color:var(--brand)}
+.card-desc{font-size:12.8px;color:var(--ink-3);line-height:1.72;margin-bottom:11px;flex:1}
+.tag-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+.tag{
+  font-size:11px;padding:1px 8px;border-radius:20px;background:var(--line-2);
+  color:var(--ink-2);white-space:nowrap;
+}
+.tag.gold{background:var(--gold-soft);color:#8a6a25}
+.tag.teal{background:var(--teal-soft);color:var(--teal)}
+.tag.red{background:var(--brand-soft);color:var(--brand)}
+.card-foot{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;color:var(--ink-3);border-top:1px solid var(--line-2);padding-top:9px;
+}
+.card-foot b{color:var(--gold);font-weight:600}
+
+/* 动态列表 */
+.feed{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.feed-item{
+  display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line-2);
+  align-items:flex-start;
+}
+.feed-item:last-child{border-bottom:0}
+.feed-item:hover{background:#fcfbf9}
+.feed-time{
+  flex-shrink:0;font-size:11.5px;color:var(--ink-3);width:70px;
+  font-variant-numeric:tabular-nums;padding-top:2px;
+}
+.feed-dot{
+  flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--brand);
+  margin-top:8px;
+}
+.feed-dot.teal{background:var(--teal)}
+.feed-dot.gold{background:var(--gold)}
+.feed-body{min-width:0;flex:1}
+.feed-body b{font-size:14px;color:var(--ink);font-weight:600;display:block;margin-bottom:2px}
+.feed-body span{font-size:12.8px;color:var(--ink-3);line-height:1.6;display:block}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px;transition:border-color .15s,background .15s,transform .15s;
+}
+.cat:hover{border-color:var(--brand);background:var(--brand-soft);transform:translateY(-1px)}
+.cat b{font-size:14.5px;display:block;margin-bottom:4px}
+.cat span{font-size:11.5px;color:var(--ink-3);display:block;line-height:1.55}
+.cat:hover b{color:var(--brand)}
+.cat:hover span{color:var(--brand-2)}
+
+/* 深度解析 */
+.article{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:30px 34px;box-shadow:var(--shadow);max-width:820px;
+}
+.article h3{
+  font-family:var(--serif);font-size:17.5px;margin:26px 0 11px;padding-left:12px;
+  border-left:4px solid var(--brand);line-height:1.4;
+}
+.article h3:first-of-type{margin-top:4px}
+.article p{font-size:14.6px;color:var(--ink-2);line-height:1.94;margin-bottom:13px}
+.article ul,.article ol{font-size:14.4px;color:var(--ink-2);line-height:1.9;margin-bottom:15px}
+.article li{margin-bottom:7px}
+.article li b{color:var(--ink)}
+.article .callout{
+  background:var(--gold-soft);border-left:3px solid var(--gold);
+  padding:13px 16px;border-radius:0 8px 8px 0;font-size:13.8px;color:#6f5620;margin:16px 0;
+}
+.article .callout b{color:#4f3d15}
+
+/* 体验指南 步骤 */
+.steps{display:grid;gap:14px}
+.step{
+  display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 20px;
+}
+.step-num{
+  width:46px;height:46px;border-radius:50%;background:var(--brand-soft);
+  color:var(--brand);font-family:var(--serif);font-size:20px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.step h4{font-size:15px;margin-bottom:5px}
+.step p{font-size:13.4px;color:var(--ink-3);line-height:1.78;margin:0}
+
+/* FAQ */
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+details{border-bottom:1px solid var(--line-2)}
+details:last-child{border-bottom:0}
+summary{
+  padding:15px 20px;cursor:pointer;font-size:14.5px;font-weight:600;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";font-size:19px;color:var(--brand);font-weight:400;flex-shrink:0;line-height:1;
+}
+details[open] summary::after{content:"−"}
+summary:hover{background:#fcfbf9}
+details .ans{padding:0 20px 16px;font-size:13.6px;color:var(--ink-3);line-height:1.86}
+details .ans b{color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:13px}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:13px 15px;display:flex;gap:11px;
+}
+.avatar{
+  width:34px;height:34px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:700;color:#fff;font-family:var(--serif);
+}
+.cmt-body{min-width:0}
+.cmt-head{display:flex;align-items:baseline;gap:8px;margin-bottom:3px;flex-wrap:wrap}
+.cmt-head b{font-size:13px;color:var(--ink)}
+.cmt-head span{font-size:11px;color:var(--ink-3)}
+.cmt-body p{font-size:12.9px;color:var(--ink-2);line-height:1.72;margin:0}
+
+/* 相关资讯 */
+.news{display:grid;gap:12px}
+.news-item{
+  display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:border-color .15s;
+}
+.news-item:hover{border-color:#d6d9e0}
+.news-item img{width:150px;height:104px;object-fit:cover}
+.news-body{padding:12px 16px 12px 0}
+.news-body h4{font-size:14.5px;margin-bottom:5px}
+.news-body h4:hover{color:var(--brand)}
+.news-body p{font-size:12.6px;color:var(--ink-3);line-height:1.68;margin:0 0 6px}
+.news-date{font-size:11.5px;color:var(--gold);font-variant-numeric:tabular-nums}
+
+/* 相关推荐 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--panel);border:1px solid var(--line);border-radius:22px;
+  padding:7px 15px;font-size:13.5px;color:var(--ink-2);transition:all .15s;
+}
+.tag-index a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
+.tag-index a i{font-style:normal;font-size:11px;color:var(--ink-3)}
+.tag-index a:hover i{color:var(--brand-2)}
+
+/* 榜单（补充板块） */
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.board-col{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.board-col h4{font-size:14px;margin-bottom:11px;display:flex;align-items:center;gap:7px;color:var(--ink)}
+.board-col h4 i{width:4px;height:14px;background:var(--gold);border-radius:2px;display:block;font-style:normal}
+.board-row{
+  display:flex;justify-content:space-between;gap:10px;padding:6px 0;
+  border-bottom:1px dashed var(--line-2);font-size:13.2px;color:var(--ink-2);
+}
+.board-row:last-child{border-bottom:0}
+.board-row b{font-weight:600;color:var(--ink)}
+.board-row span{color:var(--gold);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px}
+.timeline::before{
+  content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line);
+}
+.tl-item{position:relative;padding-bottom:15px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2px solid var(--brand);
+}
+.tl-item b{font-size:13.8px;display:block;margin-bottom:2px}
+.tl-item span{font-size:12.4px;color:var(--ink-3);line-height:1.6}
+.tl-date{font-size:11.5px;color:var(--gold);font-variant-numeric:tabular-nums;display:block;margin-bottom:1px}
+
+/* 搜索无结果 */
+.no-result{
+  display:none;padding:22px;background:var(--panel);border:1px dashed var(--line);
+  border-radius:var(--radius);text-align:center;color:var(--ink-3);font-size:13.5px;
+}
+.no-result.show{display:block}
+.filter-hint{display:none;font-size:13px;color:var(--ink-3);margin-bottom:12px}
+.filter-hint.show{display:block}
+
+/* ---------- 页尾 ---------- */
+footer.site{
+  background:#14161c;color:#b9bdc6;margin-top:30px;padding:40px 0 26px;
+}
+.foot-in{max-width:var(--max);margin:0 auto;padding:0 20px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:30px}
+.foot-brand .brand-name{color:#fff;font-size:19px}
+.foot-brand p{font-size:13px;color:#8b909b;line-height:1.8;margin:11px 0 0;max-width:300px}
+.foot-col h5{font-size:13px;color:#fff;margin:0 0 11px;font-weight:600;letter-spacing:.05em}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{font-size:13px;color:#8b909b}
+.foot-col a:hover{color:#e8c9a0}
+.foot-note{
+  border-top:1px solid rgba(255,255,255,.09);padding-top:18px;
+  font-size:12px;color:#6f747f;line-height:1.85;
+}
+.foot-note b{color:#a9aeb8;font-weight:500}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 240px;gap:22px}
+}
+@media (max-width:1024px){
+  .hero-in{grid-template-columns:1fr;gap:30px;padding-top:32px}
+  .hero-visual{max-width:520px}
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:24px}
+  aside.side-right{display:none}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .head-in{flex-wrap:wrap;gap:12px}
+  nav.main{order:3;width:100%;overflow-x:auto;padding-bottom:4px;flex-wrap:nowrap}
+  nav.main a{white-space:nowrap}
+  .search-box{min-width:150px}
+  .layout{grid-template-columns:1fr}
+  aside.side-left{position:static;order:2}
+  aside.side-left .side-panel{margin-bottom:14px}
+  .channel-list{display:flex;flex-wrap:wrap;gap:6px}
+  .channel-list li{flex:0 0 auto}
+  .channel-list a{padding:5px 11px;background:var(--line-2);font-size:13px}
+  .channel-list a span{display:none}
+  main{order:1}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .board{grid-template-columns:1fr}
+  .article{padding:22px 20px}
+}
+@media (max-width:740px){
+  .notice-in{padding:6px 14px;font-size:12px}
+  .notice-link{display:none}
+  .head-in{padding:10px 14px}
+  .brand-sub{display:none}
+  .search-box{flex:1;min-width:0}
+  .btn-ghost{display:none}
+  .wrap{padding:0 14px}
+  .hero-in{padding:26px 14px 30px}
+  .hero-stats{gap:18px}
+  .hero-stat b{font-size:19px}
+  .hero-tag{display:none}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{width:100%;height:150px}
+  .news-body{padding:0 15px 13px}
+  .comments{grid-template-columns:1fr}
+  .feed-item{padding:12px 14px;gap:10px}
+  .feed-time{width:58px;font-size:11px}
+  .step{grid-template-columns:38px minmax(0,1fr);gap:12px;padding:14px 15px}
+  .step-num{width:38px;height:38px;font-size:17px}
+  .foot-top{grid-template-columns:1fr;gap:22px}
+  .article{max-width:none}
+  .block-head h2{font-size:19px}
+  .overview{padding:18px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-top">
+  <div class="notice">
+    <div class="notice-in">
+      <span class="notice-badge">今日更新</span>
+      <span class="notice-txt"><b>11 月 25 日</b>新增 14 组高清大图档案：维米尔《戴珍珠耳环的少女》8K 修复版、敦煌莫高窟第 57 窟全景组图上线。</span>
+      <a class="notice-link" href="#latest">查看更新清单 →</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="head-in">
+      <a class="brand" href="/#top">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="2" y="6" width="36" height="28" rx="3" fill="#8a1c2b"/>
+          <rect x="6" y="10" width="28" height="20" rx="1.5" fill="#fbfaf7"/>
+          <path d="M6 30 L15 18 L21 24 L26 17 L34 30 Z" fill="#b08b3e"/>
+          <circle cx="27" cy="15" r="2.6" fill="#b8323f"/>
+        </svg>
+        <span class="brand-txt">
+          <span class="brand-name">art met大图</span>
+          <span class="brand-sub">Art Image Archive</span>
+        </span>
+      </a>
+      <nav class="main" aria-label="主导航">
+        <a href="#overview">领域概览</a>
+        <a href="#featured">精选大图</a>
+        <a href="#latest">最新更新</a>
+        <a href="#categories">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">鉴赏指南</a>
+        <a href="#faq">常见问答</a>
+        <a href="#news">相关资讯</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input id="q" type="search" placeholder="搜索作品、作者或类型" aria-label="搜索作品、作者或类型">
+        </div>
+        <a class="btn-ghost" href="#categories">分类浏览</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">高清艺术图像档案库</span>
+      <h1>art met大图</h1>
+      <p class="hero-desc">专注世界范围绘画、雕塑、版画、建筑与当代装置的高清图像档案。每一条目配原作信息、尺寸材质、馆藏来源与画面细节拆解，帮助你在放大观看之前，先弄清这幅<em>作品到底该看什么</em>。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#featured">浏览精选大图
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn-outline" href="#deep">读鉴赏方法</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>6,840</b><span>在库图像档案</span></div>
+        <div class="hero-stat"><b>1,270</b><span>位艺术家条目</span></div>
+        <div class="hero-stat"><b>326</b><span>家馆藏机构</span></div>
+        <div class="hero-stat"><b>8K</b><span>最高可放大倍率</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="gallery-wall">
+        <div class="frame f1">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#2b3a52"/>
+            <circle cx="50" cy="38" r="20" fill="#d9c8a8"/>
+            <path d="M0 100 Q30 62 55 78 T100 66 V100 Z" fill="#1d2a3d"/>
+            <path d="M12 88 Q40 70 70 84 T100 78" stroke="#b08b3e" stroke-width="1.4" fill="none" opacity=".8"/>
+            <circle cx="76" cy="18" r="7" fill="#e8d7a8" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="frame f2">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#e9e2d2"/>
+            <path d="M20 92 L34 26 L66 26 L80 92 Z" fill="#8a1c2b"/>
+            <rect x="42" y="10" width="16" height="14" rx="7" fill="#d9c8a8"/>
+            <path d="M30 70 L70 70" stroke="#f6efdf" stroke-width="2" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="frame f3">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#1d5c58"/>
+            <circle cx="50" cy="46" r="24" fill="none" stroke="#e8c9a0" stroke-width="2.4"/>
+            <circle cx="50" cy="46" r="12" fill="#e8c9a0" opacity=".55"/>
+            <path d="M8 84 Q50 58 92 84" stroke="#e8c9a0" stroke-width="1.6" fill="none" opacity=".65"/>
+          </svg>
+        </div>
+        <div class="frame f4">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#f2e7d4"/>
+            <path d="M0 76 Q26 44 52 66 T100 54 V100 H0 Z" fill="#8a6a25"/>
+            <path d="M0 88 Q34 66 62 82 T100 74 V100 H0 Z" fill="#3a2c12"/>
+          </svg>
+        </div>
+        <div class="frame f5">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#3a3f4b"/>
+            <rect x="18" y="22" width="64" height="46" fill="#c9b48a" opacity=".9"/>
+            <path d="M18 68 L50 34 L82 68 Z" fill="#8a1c2b"/>
+            <circle cx="50" cy="22" r="6" fill="#e8c9a0"/>
+          </svg>
+        </div>
+        <div class="frame f6">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#8a1c2b"/>
+            <path d="M10 80 L50 20 L90 80 Z" fill="#f6efdf" opacity=".85"/>
+          </svg>
+        </div>
+        <div class="frame f7">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#e8e2d6"/>
+            <path d="M30 100 L38 30 L62 30 L70 100 Z" fill="#2b3a52"/>
+            <circle cx="50" cy="22" r="9" fill="#b08b3e"/>
+          </svg>
+        </div>
+        <div class="frame f8">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100" height="100" fill="#d8cdb8"/>
+            <path d="M20 70 Q50 30 80 70" stroke="#1d5c58" stroke-width="3" fill="none"/>
+            <circle cx="50" cy="52" r="8" fill="#8a1c2b"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-tag"><i></i>今日新增 14 组档案 · 支持 8K 局部放大</div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏门户 -->
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左：频道索引 -->
+    <aside class="side side-left" aria-label="频道索引">
+      <div class="side-panel">
+        <div class="side-title">图像频道</div>
+        <ul class="channel-list">
+          <li><a href="#categories">文艺复兴绘画 <span>682</span></a></li>
+          <li><a href="#categories">印象派与后印象 <span>954</span></a></li>
+          <li><a href="#categories">中国书画长卷 <span>731</span></a></li>
+          <li><a href="#categories">浮世绘版画 <span>418</span></a></li>
+          <li><a href="#categories">雕塑与青铜器 <span>396</span></a></li>
+          <li><a href="#categories">建筑与壁画 <span>512</span></a></li>
+          <li><a href="#categories">现代主义绘画 <span>623</span></a></li>
+          <li><a href="#categories">当代装置影像 <span>284</span></a></li>
+          <li><a href="#categories">手稿与素描 <span>447</span></a></li>
+          <li><a href="#categories">摄影与版画 <span>309</span></a></li>
+        </ul>
+      </div>
+      <div class="side-panel">
+        <div class="side-title">专题入口</div>
+        <ul class="channel-list">
+          <li><a href="#timeline">图像修复前后对照</a></li>
+          <li><a href="#guide">第一次看懂油画</a></li>
+          <li><a href="#board">馆藏高清榜</a></li>
+          <li><a href="#news">本月图像动态</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 中：主内容 -->
+    <main>
+
+      <!-- 1 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head"><h2>领域概览：艺术大图里到底有什么</h2></div>
+        <div class="overview">
+          <p><strong>art met大图</strong>指向的是一个具体的内容领域——可被放大观看的艺术作品高清图像，以及围绕图像建立的作品档案。它不只是“一张画的高清版”，而是一整套观看材料：原作尺寸、材质、创作年代、收藏机构、修复记录，再加上对构图、笔触、光源与颜料层的局部拆解。</p>
+          <p>从类型上看，这个领域大致分成几条主线。<span class="hl">绘画类</span>包含文艺复兴祭坛画、荷兰黄金时代的室内场景、印象派外光写生、现代主义抽象；<span class="hl">纸本类</span>包含素描、水彩、版画与浮世绘，通常尺幅小、细节密，放大后信息量反而更大；<span class="hl">三维类</span>包含雕塑、青铜器与建筑构件，需要多角度视图配合；<span class="hl">当代类</span>则涉及装置、摄影与影像截帧，强调记录性与现场感。</p>
+          <p>当前值得留意的是修复图像的公开速度。2026 年下半年以来，多家机构陆续放出高分辨率扫描件，其中维米尔作品群、敦煌壁画全景组图、以及大都会馆藏的日本浮世绘整批档案，都达到了可以逐笔观察的程度。这类图像的价值不在于“好看”，而在于能直接看到画家在暗部如何处理颜料、版画师傅如何叠色、壁画在剥落处的层理关系。</p>
+          <p>对普通观看者而言，判断一组艺术大图是否值得投入时间，可以看三件事：分辨率是否支撑局部放大、是否标注原作尺寸与材质、是否附有来源机构。三者齐全，才谈得上“可研究”；只有一张漂亮的大图而无任何上下文，价值会大打折扣。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="block" id="featured">
+        <div class="block-head">
+          <h2>精选大图档案</h2>
+          <a class="more" href="#latest">全部更新 →</a>
+        </div>
+        <p class="lead">以下条目均提供可放大图像与作品档案，按类型标注，点击标题可查看完整档案信息。</p>
+        <div class="filter-hint" id="filterHint"></div>
+        <div class="card-grid" id="cardGrid">
+
+          <article class="card" data-key="维米尔 戴珍珠耳环的少女 荷兰 油画 肖像">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-vermeer01/400/300" width="400" height="300" loading="lazy" alt="维米尔《戴珍珠耳环的少女》高清档案封面">
+              <span class="card-type">荷兰绘画</span>
+              <span class="card-score">9.6</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">戴珍珠耳环的少女 · 8K 修复版</a></h3>
+              <p class="card-desc">约翰内斯·维米尔约 1665 年作品，本次档案含 8K 全图与耳环高光、头巾蓝颜料、唇部三处局部。修复版还原了背景由深黑转墨绿的原始倾向。</p>
+              <div class="tag-row"><span class="tag red">维米尔</span><span class="tag">肖像</span><span class="tag gold">8K 修复</span></div>
+              <div class="card-foot"><span>更新于 11 月 25 日</span><b>9.6 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="莫奈 睡莲 印象派 油画 橘园">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-monet02/400/300" width="400" height="300" loading="lazy" alt="莫奈《睡莲》系列大图档案封面">
+              <span class="card-type">印象派</span>
+              <span class="card-score">9.4</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">睡莲 · 橘园大型连作组图</a></h3>
+              <p class="card-desc">克劳德·莫奈晚年八联作的完整扫描，含每联接缝位置与颜料厚度示意。档案特别标注了 1916 至 1926 年间他对蓝绿色阶的调整顺序。</p>
+              <div class="tag-row"><span class="tag red">莫奈</span><span class="tag teal">外光写生</span><span class="tag">连作</span></div>
+              <div class="card-foot"><span>更新于 11 月 24 日</span><b>9.4 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="敦煌 莫高窟 壁画 第57窟 全景">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-dunhuang03/400/300" width="400" height="300" loading="lazy" alt="敦煌莫高窟第57窟壁画全景组图封面">
+              <span class="card-type">壁画</span>
+              <span class="card-score">9.7</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">莫高窟第 57 窟 · 全景组图</a></h3>
+              <p class="card-desc">初唐洞窟的代表性样本，含南壁、北壁与藻井共 26 张拼接图。可对照观察菩萨衣纹的晕染层次与剥落处的白粉底层，是研究唐代设色的关键材料。</p>
+              <div class="tag-row"><span class="tag red">敦煌</span><span class="tag gold">初唐</span><span class="tag">全景拼接</span></div>
+              <div class="card-foot"><span>更新于 11 月 25 日</span><b>9.7 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="北斋 神奈川冲浪里 浮世绘 版画">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-hokusai04/400/300" width="400" height="300" loading="lazy" alt="葛饰北斋《神奈川冲浪里》浮世绘大图封面">
+              <span class="card-type">浮世绘</span>
+              <span class="card-score">9.5</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">神奈川冲浪里 · 三版对照</a></h3>
+              <p class="card-desc">同一画稿的三个不同印次并列展示，可直观看到普鲁士蓝的浓淡差异、浪尖爪形轮廓的刻线变化，以及后期印次木板磨损带来的细节流失。</p>
+              <div class="tag-row"><span class="tag red">葛饰北斋</span><span class="tag">木版</span><span class="tag teal">版本对比</span></div>
+              <div class="card-foot"><span>更新于 11 月 22 日</span><b>9.5 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="千里江山图 王希孟 青绿山水 长卷">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-qianli05/400/300" width="400" height="300" loading="lazy" alt="王希孟《千里江山图》青绿山水长卷大图封面">
+              <span class="card-type">中国书画</span>
+              <span class="card-score">9.8</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">千里江山图 · 分段高清长卷</a></h3>
+              <p class="card-desc">北宋王希孟青绿山水，全卷按六段切分，每段附山体结构线与矿物料标注。石青石绿的重彩层次在高清下能看清叠加顺序，是理解青绿山水的入门样本。</p>
+              <div class="tag-row"><span class="tag red">王希孟</span><span class="tag gold">青绿山水</span><span class="tag">长卷</span></div>
+              <div class="card-foot"><span>更新于 11 月 20 日</span><b>9.8 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="罗丹 思想者 雕塑 青铜">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-rodin06/400/300" width="400" height="300" loading="lazy" alt="罗丹《思想者》青铜雕塑多角度大图封面">
+              <span class="card-type">雕塑</span>
+              <span class="card-score">9.2</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">思想者 · 十二角度环拍</a></h3>
+              <p class="card-desc">罗丹这件作品的青铜翻铸版本极多，档案收录了其中三件的环拍视图，可对比肌肉起伏的处理差异与浇铸接缝位置，理解“原作”与“翻铸”的区别。</p>
+              <div class="tag-row"><span class="tag red">罗丹</span><span class="tag teal">青铜</span><span class="tag">环拍视图</span></div>
+              <div class="card-foot"><span>更新于 11 月 18 日</span><b>9.2 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="梵高 星月夜 后印象派 油画 笔触">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-vangogh07/400/300" width="400" height="300" loading="lazy" alt="梵高《星月夜》笔触细节大图封面">
+              <span class="card-type">后印象派</span>
+              <span class="card-score">9.3</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">星月夜 · 笔触剖面图</a></h3>
+              <p class="card-desc">除常规全图外，档案提供侧光拍摄的笔触剖面，能看清厚涂颜料的实际高度。对理解梵高在圣雷米时期的作画速度与颜料用量很有帮助。</p>
+              <div class="tag-row"><span class="tag red">梵高</span><span class="tag">厚涂</span><span class="tag gold">侧光摄影</span></div>
+              <div class="card-foot"><span>更新于 11 月 16 日</span><b>9.3 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="帕特农神庙 建筑 雕塑 浮雕">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-parthenon08/400/300" width="400" height="300" loading="lazy" alt="帕特农神庙建筑与浮雕大图档案封面">
+              <span class="card-type">建筑</span>
+              <span class="card-score">9.1</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">帕特农神庙 · 山花与檐壁测绘</a></h3>
+              <p class="card-desc">含神庙正立面测绘图、东山花残件高清图与檐壁浮雕分段。档案标注了各构件现藏机构，适合对照理解古典建筑的视觉校正手法。</p>
+              <div class="tag-row"><span class="tag red">古希腊</span><span class="tag">建筑测绘</span><span class="tag teal">浮雕</span></div>
+              <div class="card-foot"><span>更新于 11 月 14 日</span><b>9.1 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="宋徽宗 瘦金体 书法 手稿">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-shoujin09/400/300" width="400" height="300" loading="lazy" alt="宋徽宗瘦金体书法手稿大图封面">
+              <span class="card-type">书法</span>
+              <span class="card-score">9.4</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">宋徽宗瘦金体 · 单字放大册</a></h3>
+              <p class="card-desc">选取《秾芳诗帖》等三件作品，按单字裁切放大，可看清起笔的顿挫角度与收笔的悬针处理。每字附行笔方向示意，是学瘦金体最直接的材料。</p>
+              <div class="tag-row"><span class="tag red">瘦金体</span><span class="tag gold">单字放大</span><span class="tag">笔顺</span></div>
+              <div class="card-foot"><span>更新于 11 月 12 日</span><b>9.4 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="毕加索 格尔尼卡 现代主义 立体派">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-picasso10/400/300" width="400" height="300" loading="lazy" alt="毕加索《格尔尼卡》现代主义大图档案封面">
+              <span class="card-type">现代主义</span>
+              <span class="card-score">9.5</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">格尔尼卡 · 创作过程九稿</a></h3>
+              <p class="card-desc">从最初构图草稿到最终壁画，档案按时间顺序排列九张过程稿，可追踪公牛与马的形象如何被逐步确定。对理解立体派对叙事的重组方式很直观。</p>
+              <div class="tag-row"><span class="tag red">毕加索</span><span class="tag">过程稿</span><span class="tag teal">立体派</span></div>
+              <div class="card-foot"><span>更新于 11 月 10 日</span><b>9.5 分</b></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="葛饰北斋 富岳三十六景 版画 江户">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/artmet-fugaku11/400/300" width="400" height="300" loading="lazy" alt="葛饰北斋《富岳三十六景》系列版画大图封面">
+              <span class="card-type">浮世绘</span>
+              <span class="card-score">9.3</span>
+            </div>
+            <div class="card-body">
+              <h3><a href="#featured">富岳三十六景 · 全系列索引</a></h3>
+              <p class="card-desc">46 图的完整清单，每图附构图说明与初印、后印差异。可横向比较北斋如何在不同天气与视角下处理同一座富士山，是系列观看的典型样本。</p>
+              <div class="tag-row"><span class="tag red">富岳三十六景</span><span class="tag">系列</span><span class="tag gold">初印对比</span></div>
+              <div class="card-foot"><span>更新于 11 月 8 日</span><b>9.3 分</b></div>
+            </div>
+          </article>
+
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配的作品或作者，试试“维米尔”“浮世绘”“壁画”等关键词。</div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="block" id="latest">
+        <div class="block-head"><h2>最新更新与图像动态</h2></div>
+        <div class="feed">
+          <div class="feed-item"><span class="feed-time">今天 09:30</span><span class="feed-dot"></span><div class="feed-body"><b>戴珍珠耳环的少女 · 8K 修复版上线</b><span>背景色调由纯黑校正为墨绿，新增耳环高光与头巾蓝两处局部放大图。</span></div></div>
+          <div class="feed-item"><span class="feed-time">今天 08:15</span><span class="feed-dot teal"></span><div class="feed-body"><b>莫高窟第 57 窟全景组图补齐北壁</b><span>北壁 9 张拼接图完成拼合，藻井部分增加了色层剥落标记。</span></div></div>
+          <div class="feed-item"><span class="feed-time">昨天 21:10</span><span class="feed-dot gold"></span><div class="feed-body"><b>《神奈川冲浪里》第三版印次入档</b><span>新增一件早期印次，普鲁士蓝饱和度明显高于现有两版，可三版并列观看。</span></div></div>
+          <div class="feed-item"><span class="feed-time">昨天 16:40</span><span class="feed-dot"></span><div class="feed-body"><b>《千里江山图》第六段高清重扫</b><span>卷尾部分重新扫描，石青颗粒的叠加顺序比旧版清晰约 40%。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 23 日</span><span class="feed-dot teal"></span><div class="feed-body"><b>罗丹《思想者》新增第三件翻铸环拍</b><span>补入一件 1904 年浇铸版本，共 12 个角度，可对比肩背肌肉处理。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 22 日</span><span class="feed-dot"></span><div class="feed-body"><b>宋徽宗瘦金体新增《闰中秋月帖》</b><span>单字裁切 68 字，补入行笔方向示意与纸张纤维细节。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 20 日</span><span class="feed-dot gold"></span><div class="feed-body"><b>《格尔尼卡》过程稿补入第五稿</b><span>此前缺失的中间稿已找到高清来源，九稿序列现已完整。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 18 日</span><span class="feed-dot"></span><div class="feed-body"><b>帕特农神庙东山花残件换用新测绘底图</b><span>构件位置标注精度提升，补充了各残件现藏机构信息。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 16 日</span><span class="feed-dot teal"></span><div class="feed-body"><b>梵高《星月夜》侧光剖面图上线</b><span>新增 4 张斜射光照片，可估测厚涂区域的实际颜料高度。</span></div></div>
+          <div class="feed-item"><span class="feed-time">11 月 12 日</span><span class="feed-dot"></span><div class="feed-body"><b>《富岳三十六景》初印对比表更新</b><span>补入 6 图的初印与后印差异说明，重点标注木板磨损痕迹。</span></div></div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="block" id="categories">
+        <div class="block-head"><h2>按类别查找大图</h2></div>
+        <p class="lead">分类对应具体的图像类型，点击进入该类型的条目清单。</p>
+        <div class="cat-grid">
+          <a class="cat" href="#featured"><b>文艺复兴绘画</b><span>祭坛画、圣母像、透视法实验作品</span></a>
+          <a class="cat" href="#featured"><b>印象派与后印象</b><span>外光写生、连作、厚涂笔触细节</span></a>
+          <a class="cat" href="#featured"><b>中国书画长卷</b><span>青绿山水、水墨手卷、题跋与印章</span></a>
+          <a class="cat" href="#featured"><b>浮世绘版画</b><span>锦绘、初印与后印、叠色工艺</span></a>
+          <a class="cat" href="#featured"><b>雕塑与青铜器</b><span>多角度环拍、铭文拓片、铸造接缝</span></a>
+          <a class="cat" href="#featured"><b>建筑与壁画</b><span>测绘图、全景拼接、色层剥落记录</span></a>
+          <a class="cat" href="#featured"><b>手稿与素描</b><span>过程稿、单字放大、纸张纤维</span></a>
+          <a class="cat" href="#featured"><b>摄影与当代装置</b><span>影像截帧、现场记录、展陈视角</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="block" id="deep">
+        <div class="block-head"><h2>深度解析：一张艺术大图该看哪几层</h2></div>
+        <div class="article">
+          <p>很多人拿到一张高清艺术图，第一反应是放大看细节，然后很快就失去方向——细节太多，反而不知道重点在哪。问题出在观看顺序上。一张可研究的艺术大图，信息是分层排列的，按正确的层次推进，比漫无目的地拖动滚轮有效得多。</p>
+
+          <h3>第一层：先确认这张图属于什么类型</h3>
+          <p>类型决定了后续所有判断标准。油画、版画、壁画、雕塑、书法的“好”完全不是一回事。看油画要关注颜料层与笔触，看版画要关注刻线与叠色，看壁画则要同时考虑墙面材质与剥落状况。</p>
+          <ul>
+            <li><b>油画</b>：先看整体构图与光源方向，再看暗部是否透明、亮部是否有堆叠。</li>
+            <li><b>版画</b>：先数颜色版数，再看套印是否对齐，最后看木板磨损造成的线条粗细变化。</li>
+            <li><b>壁画</b>：先看墙面平整度与裂缝走向，再看颜料层是否起甲、是否有后世补绘。</li>
+            <li><b>雕塑</b>：先看多角度轮廓，再看表面处理，最后看底座与浇铸接缝。</li>
+            <li><b>书法</b>：先看整体行气，再看单字结体，最后看起收笔的力度变化。</li>
+          </ul>
+
+          <h3>第二层：尺寸与材质决定你能看到什么</h3>
+          <p>原作尺寸是最容易被忽略、却最影响观看的信息。同样是一张 3000 像素宽的大图，来自 20 厘米的素描和来自 4 米的壁画，每像素对应的真实面积相差极大。前者放大后能看到铅笔颗粒，后者放大后可能只能看到墙面灰泥。</p>
+          <p>材质同样关键。布面油画在放大后常能看到织纹与颜料渗入的痕迹；木板油画则可能出现纵向开裂；纸本作品要留意纤维走向与霉斑；青铜器要区分范铸与失蜡法的表面差异。这些信息不会写在画面上，但会直接影响你对图像细节的解读。</p>
+          <div class="callout"><b>判断技巧：</b>如果一组大图的档案里没有标注原作尺寸与材质，那么它的局部放大图基本只能当装饰看，不适合用来做笔触或工艺层面的比较。</div>
+
+          <h3>第三层：局部放大要看“变化”，不是看“清楚”</h3>
+          <p>高分辨率的意义在于比较，而不是单纯看清。同样是维米尔，比较头巾蓝与背景绿的过渡方式，比盯着耳环看十遍更有收获。有效的局部观察通常围绕三类位置：</p>
+          <ol>
+            <li><b>转折处</b>：明暗交界、形体边缘、衣褶起落，这里最容易看出画家的处理习惯。</li>
+            <li><b>修补处</b>：修复痕迹、补笔、色差，能反推作品经历过的历史。</li>
+            <li><b>工序痕迹</b>：版画的套印偏移、壁画的起稿线、油画的底稿透出，这些是理解制作过程的直接证据。</li>
+          </ol>
+
+          <h3>第四层：版本与印次，决定你看到的是“哪一件”</h3>
+          <p>版画和雕塑尤其需要注意这一点。浮世绘同一画稿可能有数十个印次，早期印次颜色饱和、线条锐利，后期木板磨损后线条变钝、颜色发灰。青铜雕塑的翻铸版本更多，不同铸造厂的肌肉处理与表面色泽差别明显。如果不看版本信息，很容易把一件后印当作原作来评价。</p>
+          <p>绘画类也有类似问题。同一构图的复制品、工作室摹本、后世临本在图像上可能极为相似，只有对照档案中的收藏记录与材质检测，才能判断其位置。这也是为什么完整的图像档案比单张高清图更有价值。</p>
+
+          <h3>第五层：把图像放回它的语境</h3>
+          <p>最后一步是把图像放回它原本的观看环境。祭坛画原本在教堂的特定位置、特定光线下被观看；长卷是逐段展开的，不是一次性铺满视野；浮世绘是批量印刷的日常消费品，不是博物馆里的孤品。理解这些，才能解释为什么某幅画的构图看起来“不平衡”——它可能本来就是为了配合建筑结构或观看动线而设计的。</p>
+          <p>这五层不是必须严格按顺序走完的流程，而是一个检查清单。多数时候，前两层花几分钟就能确认，第三、四层才是真正耗时的部分，第五层则往往需要在多个条目之间来回对照才能建立起来。真正拉开观看质量差距的，通常不是分辨率，而是你有没有带着比较的目的去看。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head"><h2>鉴赏路径：从哪一张开始看</h2></div>
+        <p class="lead">如果你刚开始接触艺术大图，按下面的顺序推进，比随机点开热门条目更有效率。</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div><h4>先从尺幅小、细节密的纸本入手</h4><p>素描、版画、书法这类作品放大后信息集中，容易建立“看细节”的手感。推荐从《神奈川冲浪里》三版对照或宋徽宗瘦金体单字册开始。</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div><h4>再看一件有明确修复记录的油画</h4><p>修复前后的差异能让你直观理解颜料层、清漆与补笔的关系。《戴珍珠耳环的少女》8K 修复版就是典型样本，背景色调的校正过程本身就是一堂材料课。</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div><h4>然后进入系列观看</h4><p>单张看构图，系列看变化。莫奈《睡莲》连作、葛饰北斋《富岳三十六景》、毕加索《格尔尼卡》九稿，都是通过横向比较理解创作决策的好材料。</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div><h4>最后处理三维与建筑类</h4><p>雕塑环拍与建筑测绘需要更多空间想象，放在有一定图像经验之后再看，理解成本会低很多。罗丹《思想者》十二角度与帕特农神庙测绘是合适的起点。</p></div>
+          </div>
+        </div>
+        <p class="lead" style="margin-top:18px">判断一个条目值不值得投入时间，可以问三个问题：它有没有标注原作尺寸与材质？它有没有提供至少一处局部放大？它的来源机构是否可查？三个问题有两个答“是”，就值得看下去。</p>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head"><h2>常见问题</h2></div>
+        <div class="faq">
+          <details>
+            <summary>第一次接触艺术大图，从哪个条目开始看比较好？</summary>
+            <div class="ans">建议从尺幅小、细节密的纸本作品开始，比如《神奈川冲浪里》的三版对照或宋徽宗瘦金体单字册。这类图像放大后信息集中，容易建立观察习惯，不会一上来就被巨幅油画的复杂层次劝退。</div>
+          </details>
+          <details>
+            <summary>浮世绘的初印和后印有什么区别，为什么价格差很多？</summary>
+            <div class="ans">初印使用新刻木板，线条锐利、套色对齐精准，颜料也较饱和；随着印量增加，木板磨损导致线条变钝，色版错位积累，颜色逐渐发灰。版本差异直接反映在画面细节上，<b>在高清大图里对比浪尖轮廓与蓝色饱和度，就能大致判断印次早晚</b>。</div>
+          </details>
+          <details>
+            <summary>油画大图放大后看到的网格状纹理是什么？</summary>
+            <div class="ans">那通常是画布织纹。布面油画在涂底料后仍会保留经纬结构，颜料渗入纤维之间，放大后呈现规律网格。如果纹理非常规整且均匀，也可能是扫描设备的摩尔纹，需要结合档案中的材质说明判断。</div>
+          </details>
+          <details>
+            <summary>敦煌壁画的高清图为什么颜色看起来比记忆里鲜艳？</summary>
+            <div class="ans">多数公开图像经过色彩校正，以还原颜料在稳定光照下的状态，而非洞窟内昏暗光线下的观感。此外，部分图像会标注后世补绘区域，观看时应注意区分原始色层与修复部分，<b>档案中的剥落标记就是为此设置的</b>。</div>
+          </details>
+          <details>
+            <summary>同一件雕塑有多个翻铸版本，怎么判断哪个更接近原作？</summary>
+            <div class="ans">主要看铸造时间、铸造厂与是否有艺术家生前授权。罗丹作品的授权翻铸有明确编号与铸造印记，环拍图中通常能看到底座铭文。没有这些信息的版本，只能作为造型参考，不宜当作原作来讨论细节。</div>
+          </details>
+          <details>
+            <summary>青绿山水里的石青石绿，在图像上怎么区分？</summary>
+            <div class="ans">石青偏蓝、颗粒较粗，多层叠加后呈现厚重的蓝绿色块；石绿偏黄绿，常作山体亮部与坡脚。在《千里江山图》的分段高清图里，可以观察两者交界处的叠压顺序，<b>先石绿打底、再石青提亮的区域通常层次更明显</b>。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="block" id="comments">
+        <div class="block-head"><h2>社区评论</h2></div>
+        <div class="comments">
+          <div class="cmt"><div class="avatar" style="background:#8a1c2b">林</div><div class="cmt-body"><div class="cmt-head"><b>林间观画</b><span>11 月 25 日</span></div><p>珍珠耳环那个 8K 修复版，背景颜色一变，整张画的空间感完全不同了，之前看的版本确实偏黑。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#1d5c58">陈</div><div class="cmt-body"><div class="cmt-head"><b>陈默的速写本</b><span>11 月 25 日</span></div><p>瘦金体单字放大很实用，起笔那个顿挫角度终于看清楚了，比看整幅字帖有效。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#b08b3e">周</div><div class="cmt-body"><div class="cmt-head"><b>周游列馆</b><span>11 月 24 日</span></div><p>敦煌第 57 窟的拼接图做得不错，但北壁有几张接缝还是能看出来，希望后续能再优化。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#3a3f4b">苏</div><div class="cmt-body"><div class="cmt-head"><b>苏打绿不绿</b><span>11 月 24 日</span></div><p>冲浪里三版对照真的是宝藏，第一次知道普鲁士蓝在不同印次里差这么多。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#8a1c2b">何</div><div class="cmt-body"><div class="cmt-head"><b>何处不青山</b><span>11 月 23 日</span></div><p>格尔尼卡的过程稿补全之后，公牛形象的演变线索清楚多了，之前缺第五稿一直看不连贯。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#1d5c58">顾</div><div class="cmt-body"><div class="cmt-head"><b>顾影自怜猫</b><span>11 月 23 日</span></div><p>星月夜的侧光剖面有点意思，但也觉得这种图对普通观看者门槛偏高，看不太懂。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#b08b3e">郑</div><div class="cmt-body"><div class="cmt-head"><b>郑在画速写</b><span>11 月 22 日</span></div><p>千里江山图的分段方式很合理，按山体结构切比按长度切好太多，能看清整段构图。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#3a3f4b">吴</div><div class="cmt-body"><div class="cmt-head"><b>吴聊斋主人</b><span>11 月 21 日</span></div><p>罗丹三件翻铸的对比很有价值，肩背肌肉处理差别比想象中大。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#8a1c2b">许</div><div class="cmt-body"><div class="cmt-head"><b>许愿看展</b><span>11 月 20 日</span></div><p>希望能多补一些文艺复兴祭坛画的局部，现在这类条目还是偏少。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#1d5c58">梁</div><div class="cmt-body"><div class="cmt-head"><b>梁上君子</b><span>11 月 19 日</span></div><p>睡莲连作的接缝标注很细，能看出莫奈在不同年份对蓝绿的调整，这个信息很难得。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#b08b3e">沈</div><div class="cmt-body"><div class="cmt-head"><b>沈园旧梦</b><span>11 月 18 日</span></div><p>帕特农的测绘图不错，但山花残件的角度还可以再多几个，现在看不太全。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#3a3f4b">方</div><div class="cmt-body"><div class="cmt-head"><b>方寸之间</b><span>11 月 17 日</span></div><p>富岳三十六景的初印对比表很实用，按图索骥找差异，省了不少事。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#8a1c2b">韩</div><div class="cmt-body"><div class="cmt-head"><b>韩江雪</b><span>11 月 16 日</span></div><p>说实话有些条目的档案文字还是偏少，图像很清晰但不知道从哪看起。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#1d5c58">曹</div><div class="cmt-body"><div class="cmt-head"><b>曹衣出水</b><span>11 月 15 日</span></div><p>第 57 窟的菩萨衣纹晕染层次，放大之后确实能看出唐代设色的讲究。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#b08b3e">蒋</div><div class="cmt-body"><div class="cmt-head"><b>蒋山青</b><span>11 月 14 日</span></div><p>建议给每张图加个“推荐放大位置”，新手真的不知道先看哪里。</p></div></div>
+          <div class="cmt"><div class="avatar" style="background:#3a3f4b">唐</div><div class="cmt-body"><div class="cmt-head"><b>唐风宋韵</b><span>11 月 13 日</span></div><p>青绿山水的矿物料标注做得好，石青石绿的叠压顺序一目了然。</p></div></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head"><h2>图像与馆藏资讯</h2></div>
+        <div class="news">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news01/600/400" width="600" height="400" loading="lazy" alt="大都会馆藏浮世绘整批数字化资讯配图">
+            <div class="news-body">
+              <h4>大都会馆藏浮世绘整批开放高清图像</h4>
+              <p>约 1,100 件锦绘完成高分辨率扫描，含初印与后印对照信息，可逐张下载研究。</p>
+              <span class="news-date">2026-11-25</span>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news02/600/400" width="600" height="400" loading="lazy" alt="敦煌壁画数字化项目资讯配图">
+            <div class="news-body">
+              <h4>敦煌第 57 窟数字化项目公布第二批全景图</h4>
+              <p>新增北壁与藻井拼接图像，同步标注颜料层剥落区域，供临摹与修复研究使用。</p>
+              <span class="news-date">2026-11-23</span>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news03/600/400" width="600" height="400" loading="lazy" alt="维米尔作品修复研究资讯配图">
+            <div class="news-body">
+              <h4>维米尔《戴珍珠耳环的少女》背景色研究结论公开</h4>
+              <p>检测显示背景原为墨绿色调，现有观感中的深黑部分来自清漆老化，修复影像已同步发布。</p>
+              <span class="news-date">2026-11-21</span>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news04/600/400" width="600" height="400" loading="lazy" alt="罗丹雕塑翻铸版本研究资讯配图">
+            <div class="news-body">
+              <h4>罗丹雕塑翻铸版本数据库新增 40 件记录</h4>
+              <p>记录含铸造厂印记、浇铸年份与历次展出信息，可用于区分生前授权版本与后期翻铸。</p>
+              <span class="news-date">2026-11-19</span>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news05/600/400" width="600" height="400" loading="lazy" alt="青绿山水颜料研究成果资讯配图">
+            <div class="news-body">
+              <h4>《千里江山图》石青来源分析成果发表</h4>
+              <p>研究确认部分石青为蓝铜矿研磨而成，颗粒粒度与叠涂层数直接影响画面的明度层次。</p>
+              <span class="news-date">2026-11-15</span>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/artmet-news06/600/400" width="600" height="400" loading="lazy" alt="艺术图像开放授权讨论资讯配图">
+            <div class="news-body">
+              <h4>多家机构调整艺术图像开放授权范围</h4>
+              <p>公有领域作品的下载限制进一步放宽，但高精度商业用途仍需单独申请，研究者需留意条款变化。</p>
+              <span class="news-date">2026-11-11</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="block" id="related">
+        <div class="block-head"><h2>延伸方向与条目索引</h2></div>
+        <p class="lead">以下为与当前图像档案相关的延伸方向，适合在看完主条目之后继续深入。</p>
+        <div class="tag-index">
+          <a href="#featured">荷兰黄金时代室内场景 <i>绘画</i></a>
+          <a href="#featured">浮世绘叠色工艺 <i>版画</i></a>
+          <a href="#featured">唐代壁画晕染技法 <i>壁画</i></a>
+          <a href="#featured">青绿山水矿物料 <i>书画</i></a>
+          <a href="#featured">青铜失蜡法表面痕迹 <i>雕塑</i></a>
+          <a href="#featured">古典建筑视觉校正 <i>建筑</i></a>
+          <a href="#featured">立体派构图重组 <i>现代</i></a>
+          <a href="#featured">书法单字结体分析 <i>书法</i></a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：榜单 + 时间线 -->
+      <section class="block" id="board">
+        <div class="block-head"><h2>馆藏高清榜与图像时间线</h2></div>
+        <div class="board">
+          <div class="board-col">
+            <h4><i></i>本月高清图像热度榜</h4>
+            <div class="board-row"><b>千里江山图 · 分段长卷</b><span>9.8</span></div>
+            <div class="board-row"><b>莫高窟第 57 窟全景</b><span>9.7</span></div>
+            <div class="board-row"><b>戴珍珠耳环的少女 8K</b><span>9.6</span></div>
+            <div class="board-row"><b>神奈川冲浪里三版</b><span>9.5</span></div>
+            <div class="board-row"><b>格尔尼卡九稿序列</b><span>9.5</span></div>
+            <div class="board-row"><b>睡莲连作组图</b><span>9.4</span></div>
+            <div class="board-row"><b>瘦金体单字放大册</b><span>9.4</span></div>
+            <div class="board-row"><b>星月夜笔触剖面</b><span>9.3</span></div>
+          </div>
+          <div class="board-col" id="timeline">
+            <h4><i></i>图像档案更新记录</h4>
+            <div class="timeline">
+              <div class="tl-item"><span class="tl-date">2026-11-25</span><b>维米尔 8K 修复版、第 57 窟北壁入档</b><span>两批条目同步上线局部放大图。</span></div>
+              <div class="tl-item"><span class="tl-date">2026-11-22</span><b>冲浪里第三印次补入</b><span>三版并列观看功能开放。</span></div>
+              <div class="tl-item"><span class="tl-date">2026-11-20</span><b>千里江山图第六段重扫</b><span>卷尾石青颗粒清晰度提升。</span></div>
+              <div class="tl-item"><span class="tl-date">2026-11-18</span><b>帕特农测绘底图更换</b><span>构件位置标注精度提高。</span></div>
+              <div class="tl-item"><span class="tl-date">2026-11-12</span><b>瘦金体新增《闰中秋月帖》</b><span>单字裁切 68 字并附笔顺示意。</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右：辅助栏 -->
+    <aside class="side side-right" aria-label="辅助信息">
+      <div class="side-panel">
+        <div class="side-title">今日热门档案</div>
+        <ol class="rank-list">
+          <li><a href="#featured">千里江山图 · 分段长卷<span class="rank-meta">11 月 25 日 · 浏览 12,480</span></a></li>
+          <li><a href="#featured">戴珍珠耳环的少女 8K<span class="rank-meta">11 月 25 日 · 浏览 9,736</span></a></li>
+          <li><a href="#featured">莫高窟第 57 窟全景<span class="rank-meta">11 月 25 日 · 浏览 8,412</span></a></li>
+          <li><a href="#featured">神奈川冲浪里三版<span class="rank-meta">11 月 22 日 · 浏览 7,205</span></a></li>
+          <li><a href="#featured">格尔尼卡九稿序列<span class="rank-meta">11 月 20 日 · 浏览 6,318</span></a></li>
+          <li><a href="#featured">睡莲连作组图<span class="rank-meta">11 月 24 日 · 浏览 5,904</span></a></li>
+          <li><a href="#featured">瘦金体单字放大册<span class="rank-meta">11 月 12 日 · 浏览 5,120</span></a></li>
+          <li><a href="#featured">帕特农神庙测绘<span class="rank-meta">11 月 18 日 · 浏览 4,366</span></a></li>
+        </ol>
+      </div>
+      <div class="side-panel">
+        <div class="side-title">最近更新</div>
+        <ul class="channel-list">
+          <li><a href="#latest">维米尔 8K 修复 <span>11-25</span></a></li>
+          <li><a href="#latest">第 57 窟北壁 <span>11-25</span></a></li>
+          <li><a href="#latest">冲浪里第三印次 <span>11-22</span></a></li>
+          <li><a href="#latest">千里江山图重扫 <span>11-20</span></a></li>
+          <li><a href="#latest">思想者第三翻铸 <span>11-23</span></a></li>
+        </ul>
+      </div>
+      <div class="side-panel" style="background:var(--gold-soft);border-color:#e8dcc0">
+        <div class="side-title" style="color:#8a6a25">收藏提示</div>
+        <p style="font-size:12.8px;color:#6f5620;line-height:1.75;margin:0">公有领域作品的图像可直接下载用于学习；高精度商业用途请以来源机构的授权条款为准。</p>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand" style="gap:11px">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="2" y="6" width="36" height="28" rx="3" fill="#8a1c2b"/>
+            <rect x="6" y="10" width="28" height="20" rx="1.5" fill="#fbfaf7"/>
+            <path d="M6 30 L15 18 L21 24 L26 17 L34 30 Z" fill="#b08b3e"/>
+            <circle cx="27" cy="15" r="2.6" fill="#b8323f"/>
+          </svg>
+          <span class="brand-txt"><span class="brand-name">art met大图</span></span>
+        </div>
+        <p>面向艺术爱好者与视觉创作者的高清图像档案库，收录绘画、版画、壁画、雕塑与建筑作品的可放大图像及作品信息。</p>
+      </div>
+      <div class="foot-col">
+        <h5>图像频道</h5>
+        <ul>
+          <li><a href="#categories">文艺复兴绘画</a></li>
+          <li><a href="#categories">印象派与后印象</a></li>
+          <li><a href="#categories">中国书画长卷</a></li>
+          <li><a href="#categories">浮世绘版画</a></li>
+          <li><a href="#categories">雕塑与青铜器</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>内容栏目</h5>
+        <ul>
+          <li><a href="#featured">精选大图档案</a></li>
+          <li><a href="#latest">最新更新</a></li>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">鉴赏路径</a></li>
+          <li><a href="#board">热度榜与时间线</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>社区与帮助</h5>
+        <ul>
+          <li><a href="#comments">社区评论</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#news">图像资讯</a></li>
+          <li><a href="#related">延伸方向索引</a></li>
+          <li><a href="#overview">领域概览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><b>数据说明：</b>本页所列条目名称、评分、浏览量、更新日期与评论均为示例内容，用于展示图像档案的组织方式；实际图像来源与授权以各馆藏机构公布条款为准。</p>
+      <p>© 2026 art met大图 图像档案库 · 本站为独立内容整理站点，与任何博物馆、美术馆无隶属关系。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('q');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cardGrid .card'));
+  var noResult = document.getElementById('noResult');
+  var hint = document.getElementById('filterHint');
+
+  function run(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.classList.remove('show');
+      hint.classList.remove('show');
+      hint.textContent = '';
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = (c.getAttribute('data-key') || '') + ' ' + c.textContent.toLowerCase();
+      var ok = text.toLowerCase().indexOf(q) > -1;
+      c.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    if(hit === 0){
+      noResult.classList.add('show');
+      hint.classList.remove('show');
+    }else{
+      noResult.classList.remove('show');
+      hint.textContent = '筛选出 ' + hit + ' 条匹配「' + input.value.trim() + '」的大图档案';
+      hint.classList.add('show');
+    }
+  }
+
+  input.addEventListener('input', run);
+  input.addEventListener('search', run);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); run(); }
+  });
+})();
+</script>
+</body>
+  </html>
